@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp_1">
+        <item android:id="@+id/book_a_service"
+            android:title="Book a Service"/>
+        <item android:id="@+id/requests"
+            android:title="My Requests"/>
+        <item android:id="@+id/notification"
+            android:title="Notification"/>
+        <item android:id="@+id/contact"
+            android:title="Support/Contact"/>
+        <item android:id="@+id/about"
+            android:title="About" />
+    </group>
+    <group android:id="@+id/grp_2">
+        <item android:id="@+id/settings"
+            android:title="Settings"/>
+        <item android:id="@+id/logout"
+            android:title="Logout"/>
+    </group>
+
+
+</menu>
