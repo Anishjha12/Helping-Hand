@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:orientation="vertical"
+    tools:context=".GetAllDetails">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/GetAllDerailsImage"
+        android:layout_width="120dp"
+        android:onClick="choosepic"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/def_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+        <ProgressBar
+            android:id="@+id/photoprogress"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"/>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="Please provide the following details."/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"/>
+
+    <EditText
+        android:id="@+id/getname"
+        android:layout_width="match_parent"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:backgroundTint="@color/black"
+        android:inputType="textCapWords"
+        android:layout_height="0dp"
+        android:textCursorDrawable="@drawable/cursor_black"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:hint="Full Name"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"/>
+
+    <EditText
+        android:id="@+id/getemail"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/black"
+        android:textCursorDrawable="@drawable/cursor_black"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:hint="Your Email"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"/>
+
+    <Button
+        android:id="@+id/GetAllDetailsButton"
+        android:layout_width="match_parent"
+        android:background="@drawable/button2"
+        android:onClick="save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:text="Save and Continue" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.6"/>
+
+
+
+
+
+</LinearLayout>
